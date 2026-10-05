@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>تعلم لغة البرمجة CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 class="title">الفهــرس</h1>
+
+  <section class="الفهرس">
+    <a href="#II" class="html">II.لغة البرمجة CSS.</a>
+    <!--css طرق كتابة كود-->
+    <div>
+      <a href="/مشروعي/ملخص HTML.html" target="_self">I.لغة البرمجة HTML</a><br>
+      <a href="#II.1">1.طرق كتابة كود css.</a><br>
+      &ensp;<a href="#II.1.a">a/كتابة الكود داخل ملف html.</a><br>
+      &ensp;<a href="#II.1.b">b/كتابة الكود في مسار ملف css خارجي.</a><br>
+      &ensp;<a href="#II.1.c">c/كتابة الكود داخل وسم العنصر.</a>
+    </div>
+
+    <!--css مصطلحات خاصة بلغة -->
+    <div>
+      <a href="#II.2">2.مصطلحات خاصة بلغة CSS.</a><br>
+      &ensp;<a href="#II.2.a">a/مصطلحات خاصة بالمحتوى.</a><br>
+      &ensp;<a href="#II.2.b">b/مصطلحات خاصة ب</a><br>
+      &ensp;<a href="#II.2.c">c/مصطلحات عامة.</a>
+    </div>
+
+    <!--أنواع العناصر المتحكمة CSS بالمحتوى الخاصة بلغة-->
+    <div>
+      <a href="#">3.أنواع العناصر المتحكمة بالمحتوى الخاصة بلغة CSS.</a><br>
+      &ensp;<a href="#II.3.a">a/الإطارات border.</a><br>
+      &ensp;<a href="#II.3.b">b/الخطوط font.</a><br>
+      &ensp;<a href="#II.3.c">c/.</a>
+    </div>
+
+    <!---->
+    <div>
+      <a href="#II.4">4.أمثلة حول تطبيق بعض أكواد البرمجة css.</a><br>
+      &ensp;<a href="#II.4.a">a/صندوق المحتوى(margin,border,padding).</a><br>
+      &ensp;<a href="#II.4.b">b/.</a><br>
+      &ensp;<a href="#II.4.c">c/.</a><br>
+      &ensp;<a href="#II.4.d">d/.</a><br>
+    </div>
+    <hr>
+  </section>
+
+  <!--css-->
+  <section>
+    <h1 id="II" class="II">II.لغة البرمجة CSS</h1>
+
+    <!--CSS كتابة كود-->
+    <article>
+      <h2 id="II.1">1.طرق كتابة كود css</h2>
+
+      <div class="II.1.a">
+        <h3 id="II.1.a">a/كتابة الكود داخل ملف html:</h3>
+        <p dir="ltr">
+          &lt;<b>style</b>&gt;<br>
+          h1 <b>{</b><br>
+          &emsp;color: red<b>;</b><br>
+          &emsp;font-size: 50<b>px;</b><br>
+          &emsp;<b>}</b><br>
+          &lt;<b>/style</b>&gt;
+        </p>
+
+        <div>
+          <h4>• ملاحظة:</h4>
+          ° لتطبيق نفس الكود في عنصرين مختلفين نستخدم رمز <b>,</b> حيث:
+          <p dir="ltr">h1 <b>,</b> h2 <b>,</b> p <b>{</b> color: blue; <b>}</b></p>
+        </div>
+      </div>
+
+      <div class="II.1.b">
+        <h3 id="II.1.b">b/كتابة الكود في مسار ملف css خارجي:</h3>
+        <p dir="ltr">
+          &lt;<b>link</b> <b class="c">rel</b>="stylesheet" <b>href</b>="مسار ملف css"&gt;
+        </p>
+      </div>
+
+      <div class="II.1.c">
+        <h3 id="II.1.c">c/كتابة الكود داخل وسم العنصر:</h3>
+        <p dir="ltr">
+          &lt;h1 <b>style="</b>color:red<b>;</b> font-size:20px<b>;</b> font-weight:500<b>"</b>&gt; العنوان &lt;<b>/h1</b>&gt;
+        </p>
+      </div>
+
+    </article>
+
+    <!--css مصطلحات خاصة بلغة-->
+    <article>
+      <h2 id="II.2">2.مصطلحات خاصة بلغة CSS</h2>
+      <div class="II.2.a">
+        <h3 id="II.2.a">a/مصطلحات خاصة بالمحتوى:</h3>
+        <ul>
+          <li><b>content:</b> المحتوى.</li>
+          <li><b>padding:</b> مساحة داخلية تفصل المحتوى عن حدوده.</li>
+          <li><b>border:</b> حدود أو سمك المحتوى.</li>
+          <li><b>margin:</b> مساحة خارجية تحدد المحتوى الفاصل.</li>
+          <li><b>fit-content:</b> التناسب مع المحتوى، مثلا:
+            <p dir="ltr">h1 { height: <b>fit-content</b>; }</p>
+          </li>
+          <li><b>max-content:</b> ضبط حجم المحتوى ليناسب أقصى حجم طبيعي ويكتب في سطر واحد مهما يكن.</li>
+          <li><b>min-content:</b> تقطيع المحتوى المكتوب إلى كلمات.</li>
+          <li><b>max-width:</b> أقصى عرض ممكن.</li>
+          <li><b>min-width:</b> أقل عرض ممكن.</li>
+          <li><b>max-height:</b> أقصى طول ممكن.</li>
+          <li><b>min-height:</b> أقل طول ممكن.</li>
+        </ul>
+      </div>
+
+      <div class="II.2.b">
+        <h3 id="II.2.b">b/مصطلحات خاصة بـ:</h3>
+        <ul>
+          <li><b></b></li>
+          <li><b></b></li>
+          <li><b></b></li>
+          <li><b></b></li>
+        </ul>
+      </div>
+
+      <div class="II.2.c">
+        <h3 id="II.2.c">c/مصطلحات عامة:</h3>
+        <ul>
+          <li><b>top:</b> أعلى ،مثلا: border<b class="c">-top</b></li>
+          <li><b>bottom:</b> أسفل ،مثلا: border<b class="c">-bottom</b>.</li>
+          <li><b>left:</b> يسار.</li>
+          <li><b>right:</b> يمين.</li>
+          <li><b>background:</b> خلفية العنصر.</li>
+          <li><b>class:</b> تمييز عنصر أو عدة عناصر بواسطة (<b>.</b>) متبوعة بالرمز المشترك:
+            <p dir="ltr">
+              ° &lt;<b>h1</b> <b class="c">class</b>="abc"&gt;title&lt;<b>/h1</b>&gt;<br>
+              ° css : <b>.abc</b> { }
+            </p>
+          </li>
+          <li><b>* :</b> أداة تسمح بتمييز جميع عناصر المتصفح والتعديل عليها.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!--CSS أنواع العناصر المتحكمة بالمحتوى الخاصة بلغة-->
+    <article>
+      <h2 id="II.3">3.أنواع العناصر المتحكمة بالمحتوى الخاصة بلغة CSS</h2>
+
+      <!--border الإطارات-->
+      <div class="II.3.a">
+        <h3 id="II.3.a">a/الإطارات border:</h3>
+        <h4>• أنواع الإطارات <b>border</b>:</h4>
+        <h4>&emsp;1/ أنماط الحدود <b>(border-style)</b>:</h4>
+        <ul>
+          <li><b>solid:</b> خط صلب ومستمر.</li>
+          <li><b>dashed:</b> خطوط متقطعة.</li>
+          <li><b>dotted:</b> نقط متفرقة.</li>
+          <li><b>double:</b> خط مزدوج.</li>
+          <li><b>hidden:</b> مخفي.</li>
+          <li><b>none:</b> لا يوجد حد.</li>
+        </ul>
+        <h4>&emsp;2/ أنماط ثلاثية الأبعاد <b>(3D style)</b>:</h4>
+        <ul>
+          <li><b>groove:</b> محفور في الصفحة ثلاثي الأبعاد.</li>
+          <li><b>ridge:</b> بارز ثلاثي الأبعاد.</li>
+          <li><b>inset:</b> المحتوى غائر داخل الإطار.</li>
+          <li><b>outset:</b> إبراز المحتوى من الإطار.</li>
+        </ul>
+        <h4>&emsp;3/ تكوير زوايا الحدود للمحتوى <b>(border-radius)</b>:</h4>
+        <ul>
+          <li><b style="border-bottom: solid 1px;">قيمة واحدة:</b> تطبق على الزوايا الأربعة.</li>
+          <li><b style="border-bottom: solid 1px;">قيمتان:</b> الأولى أعلى يسار وأسفل يمين ،الثانية الزوايا المعاكسة.</li>
+          <li><b style="border-bottom: solid 1px;">ثلاث قيم:</b> الأولى أعلى يسار ،الثانية أعلى يمين وأسفل يسار ،الثالثة أسفل يمين.</li>
+          <li><b style="border-bottom: solid 1px;">أربع قيم:</b> أعلى يسار ،أعلى يمين ،أسفل يمين ،أسفل يسار.</li>
+        </ul>
+        نستطيع التحكم في الخصائص الفردية لكل زاوية ،نأخذ زاوية أعلى يسار مثلا:
+        <p dir="ltr">
+          border<b style="border: solid 1px black;">-top-left-radius</b>: 10px;
+        </p>
+      </div>
+
+      <!--font الخطوط -->
+      <div class="II.3.b">
+        <h3 id="II.3.b">b/الخطوط font:</h3>
+        <!--font-family نوع الخط-->
+        <div>
+          <h4>1/ نوع الخط <b>font-family</b> :</h4>
+          <h4>• عائلة الخطوط العامة في <b>css:</b></h4>
+          <ul>
+            <li><b>serif:</b> تحتوي على نتوءات أو حواف صغيرة في الأطراف.</li>
+            <li><b>sans-serif:</b> خطوط بدون نتوءات.</li>
+            <li><b>monospace:</b> جميع الحروف لها نفس العرض، وتستخدم غالبًا في عرض الأكواد البرمجية.</li>
+            <li><b>cursive:</b> خطوط تشبه الكتابة اليدوية المتصلة.</li>
+            <li><b>fantasy:</b> خطوط زخرفية أو مرحة.</li>
+          </ul>
+          <h4>• أنواع الخطوط التي تدعمها جميع أنظمة التشغيل:</h4>
+          يكتب نوع الخط الذي يحتوي على فواصل داخل علامة تنصيص فردية <b>'</b>Times New Roman<b>'</b> ,أو داخل علامة تنصيص مزدوجة <b>"</b>Times New Roman<b>"</b>.
+          <ul>
+            <li><b>Tahoma</b>.</li>
+            <li><b>Times New Roman</b>.</li>
+            <li><b>Georgia</b>.</li>
+            <li><b>Arial</b>.</li>
+            <li><b>Verdana</b>.</li>
+            <li><b>Helvetica</b>.</li>
+            <li><b>Courier New</b>.</li>
+            <li><b>Lucida Console</b>.</li>
+            <li><b>Monaco</b>.</li>
+            <li><b>Brush Script MT</b>.</li>
+            <li><b>Lucida Handwriting</b>.</li>
+            <li><b>Copperplate</b>.</li>
+            <li><b>Papyrus</b>.</li>
+          </ul>
+        </div>
+        <!--font-style نمط الخط-->
+        <div>
+          <h4>2/ نمط الخط <b>font-style</b>:</h4>
+          <ul>
+            <li><b>normal:</b> القيمة الافتراضية.</li>
+            <li><b>italic:</b> الخط مائل.</li>
+            <li><b>oblique:</b> الخط مائل بشكل بسيط.</li>
+          </ul>
+        </div>
+        <!--font-weight سمك الخط-->
+        <div>
+          <h4>3/ سمك الخط <b>font-weight</b>:</h4>
+          <ul>
+            <li><b>100:</b> نحيف جدا.</li>
+            <li><b>200:</b> خفيف جدا.</li>
+            <li><b>300:</b> خفيف.</li>
+            <li><b>400:</b> عادي.</li>
+            <li><b>500:</b> متوسط.</li>
+            <li><b>600:</b> شبه غامق.</li>
+            <li><b>700:</b> غامق.</li>
+            <li><b>800:</b> غامق جدا.</li>
+            <li><b>900:</b> أسود ثقيل.</li>
+          </ul>
+        </div>
+        <!--font-size حجم الخط-->
+        <div>
+          <h4>4/ حجم الخط <b>font-size</b>:</h4>
+          • يقدر حجم الخط بـ <b>px</b> ,وحجمه الإفتراضي في معظم الصفحات <b>16px</b>.<br>
+          • لتكيف حجم الخط بسلاسة بين حد أدنى وحد أقصى أثناء تغير حجم الشاشة نستخدم وظيفة <b>()clamp</b>, كمثال:
+          <p dir="ltr">font<b>-size</b>: <b>clamp(</b>16px, 2vw, 32px<b>)</b>;</p>
+        </div>
+      </div>
+
+      <!---->
+      <div class="II.3.c">
+        <h3 id="II.3.c">c/:</h3>
+
+      </div>
+    </article>
+
+    <!--أمثلة حول تطبيق أكواد البرمجة-->
+    <article>
+      <h2 id="II.4">4.أمثلة حول تطبيق بعض أكواد البرمجة CSS</h2>
+
+      <!--box model صندوق المحتوى-->
+      <div class="II.4.a">
+        <h3 id="II.4.a">a/صندوق المحتوى(margin,border,padding):</h3>
+        <!--تطبيق الكود-->
+        <div>
+          <h4>• مثال:</h4>
+          <p dir="ltr">
+            h1 <b style="color: red">{</b><br>
+            &emsp;<b>border</b>: solid 1px red<b>;</b><br>
+            &emsp;<b>padding</b>: 20px 10px<b>;</b><br>
+            &emsp;<b>margin</b>: 15px 10px 30px<b>;</b><br>
+            &emsp;<b>height</b>: 200px<b>;</b><br>
+            &emsp;<b>width</b>: 100px; <br>
+            &emsp;<b style="color: red">}</b>
+          </p>
+        </div>
+        <!--التحكم في خصائص المحتوى-->
+        <div>
+          <h4 style="color: darkred">• ملاحظة:</h4>
+          <p>
+            هناك طريقتين للتحكم في قيم خصائص المحتوى.
+          </p>
+          <h4>&emsp; 1/الخصائص الفردية:</h4>
+          <p>
+            • border<b style="border: solid 1px black;">-top</b>: التحكم في قيمة الجزء العلوي للمحتوى.<br>
+            • border<b style="border: solid 1px black;">-right</b>: التحكم في قيمة الجزء الأيمن للمحتوى.<br>
+            • border<b style="border: solid 1px black;">-bottom</b>: التحكم في قيمة الجزء السفلي للمحتوى.<br>
+            • border<b style="border: solid 1px black;">-left</b>: التحكم في قيمة الجزء الأيسر للمحتوى.
+          </p>
+          <h4>&emsp; 2/الخاصية المختصرة:</h4>
+          <p>
+            • <b style="border-bottom: solid 1px;">قيمة واحدة:</b> تطبق على الجوانب الأربعة. <b>مثلا:</b>
+          </p>
+          <p dir="ltr">padding: <b style="border: solid 1px black;">15px;</b></p>
+          • <b style="border-bottom: solid 1px;">قيمتان:</b> الأولى للعلوي والسفلي ،الثانية للأيمن والأيسر. <b>مثلا:</b>
+          <p dir="ltr">margin: <b style="border: solid 1px black;">10px 15px;</b></p>
+          • <b style="border-bottom: solid 1px;">ثلاث قيم:</b> الأولى للعلوي ،الثانية للأيمن والأيسر ،الثالثة للسفلي. <b>مثلا:</b>
+          <p dir="ltr">margin: <b style="border: solid 1px black;">15px 20px 10px;</b></p>
+          • <b style="border-bottom: solid 1px;">أربع قيم:</b> العلوي ،الأيمن ،السفلي ،الأيسر بالترتيب. <b>مثلا:</b>
+          <p dir="ltr">margin: <b style="border: solid 1px black;">10px 10px 0px 30px;</b></p>
+        </div>
+      </div>
+
+      <!---->
+      <div class="II.4.b">
+        <h3 id="II.4.b">b/:</h3>
+
+
+      </div>
+
+      <!---->
+      <div class="II.4.c">
+        <h3 id="II.4.c">c/:</h3>
+
+
+      </div>
+
+      <!---->
+      <div class="II.4.d">
+        <h3 id="II.4.d">d/:</h3>
+
+
+      </div>
+
+    </article>
+
+  </section>
+</body>
+
+</html>

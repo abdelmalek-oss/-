@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(16px, 1.8vw, 19px);
+    background-color: #E0F1D0;
+    color: #333333;
+    line-height: 1.7;
+    padding: 25px;
+}
+
+/* تنسيق العناوين الرئيسية */
+h1 { color: #1B008F; }
+h2 { color: #373F7A; }
+h3 { color: #044219; }
+h4 { color: #9D604B; }
+
+h1, h2, h3, h4 {
+    border-radius: 5px;
+    border-bottom: 2px solid currentColor;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+/* العنوان الرئيسي للفهرس والصفحة */
+.title {
+    width: 60%;
+    margin: 10px auto 40px;
+    text-align: center;
+    border: 4px outset #1B008F;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+/* أوسمة الأقسام الرئيسية */
+.I, .II {
+    border-radius: 10px 0px;
+    text-align: right;
+    margin: 30px 0 15px;
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* تنسيق الفهرس */
+.الفهرس {
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #b8d8a0;
+}
+
+.الفهرس a {
+    text-decoration: none;
+    color: #1B008F;
+    font-weight: bold;
+}
+
+.الفهرس a:hover {
+    text-decoration: underline;
+    color: #9E0780;
+}
+
+/* إبراز الوسوم وتغميق النصوص والتحكم بألوان الأكواد */
+b { color: #A33E4D; font-weight: bold; }
+.c { color: #22797E; font-weight: bold; }
+.html { color: #9E0780; font-weight: bold; }
+
+/* تنسيق عرض الأكواد البرمجية بالخط العريض LTR */
+p[dir="ltr"], code {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Consolas', 'Fira Code', 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+p[dir="ltr"] {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #373F7A;
+    margin: 10px 0 20px;
+    overflow-x: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* تنسيق القوائم والمقالات */
+ul {
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #373F7A;
+    margin: 40px 0;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
